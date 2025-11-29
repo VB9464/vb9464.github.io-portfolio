@@ -1,32 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ML Engineer Portfolio - 3D Resume</title>
+    <meta name="description"
+        content="Portfolio of Vishal Bagal, an ML Engineer specializing in Machine Learning, Deep Learning, and AI solutions.">
+    <meta name="keywords" content="ML Engineer, Data Scientist, AI, Machine Learning, Deep Learning, Python, Portfolio">
+    <meta property="og:title" content="Vishal Bagal - ML Engineer Portfolio">
+    <meta property="og:description"
+        content="Building intelligent systems that solve real-world problems. View my projects and skills.">
+    <meta property="og:type" content="website">
+    <title>Vishal Bagal - ML Engineer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
+
 <body>
-    <!-- Navigation -->
+    <div class="hero-background">
+        <div class="bg-shape shape-1" data-speed="0.5"></div>
+        <div class="bg-shape shape-2" data-speed="0.3"></div>
+        <div class="bg-shape shape-3" data-speed="0.7"></div>
+        <div class="bg-shape shape-4" data-speed="0.4"></div>
+        <div class="bg-shape shape-5" data-speed="0.6"></div>
+        <div class="particles" id="particles"></div>
+    </div>
+
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                <span class="logo-text">ML Engineer</span>
-            </div>
+            <a href="#" class="logo-text"><i class="fas fa-rocket"></i> Vishal Bagal</a>
+
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#skills" class="nav-link"><i class="fas fa-code"></i> Skills</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-project-diagram"></i> Projects</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+
             <div class="theme-toggle">
-                <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">
+                <button class="theme-btn" id="theme-toggle" aria-label="Toggle Theme">
                     <i class="fas fa-moon"></i>
                 </button>
             </div>
-            <ul class="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
+
             <div class="hamburger">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -45,34 +63,25 @@
                             <img src="images/Vishal_Bagal.jpg" alt="Profile Image" id="profile-img">
                             <div class="image-overlay"></div>
                         </div>
-                        <div class="floating-elements">
-                            <div class="floating-icon" style="--delay: 0s">
-                                <i class="fab fa-python"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 1s">
-                                <i class="fas fa-brain"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 2s">
-                                <i class="fas fa-robot"></i>
-                            </div>
-                            <div class="floating-icon" style="--delay: 3s">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                        </div>
                     </div>
                 </div>
                 <div class="hero-text">
                     <h1 class="hero-title">
                         <span class="title-line">Hi, I'm</span>
-                        <span class="title-line name-highlight">Vishal Bagal</span>
+                        <span class="title-line">
+                            <span class="name-highlight">Vishal Bagal</span>
+                        </span>
                         <span class="title-line">
                             <span class="typing-text" id="typing-text">ML Engineer</span>
                             <span class="cursor">|</span>
                         </span>
                     </h1>
                     <p class="hero-description">
-                        Passionate about building <span class="highlight-text">intelligent systems</span> that solve real-world problems. 
-                        Specializing in <span class="highlight-text">machine learning</span>, <span class="highlight-text">deep learning</span>, and <span class="highlight-text">AI solutions</span>.
+                        Passionate about building <span class="highlight-text">intelligent systems</span> that solve
+                        real-world problems.
+                        Specializing in <span class="highlight-text">machine learning</span>, <span
+                            class="highlight-text">deep learning</span>, and <span class="highlight-text">AI
+                            solutions</span>.
                     </p>
                     <div class="hero-badges">
                         <span class="badge">🤖 AI/ML</span>
@@ -81,24 +90,54 @@
                         <span class="badge">🚀 MLOps</span>
                     </div>
                     <div class="hero-buttons">
-                        <button class="btn btn-primary" onclick="scrollToSection('projects')">
+                        <button class="btn btn-primary" id="btn-projects">
                             <span>View Projects</span>
                             <i class="fas fa-arrow-right"></i>
                         </button>
-                        <button class="btn btn-secondary" onclick="scrollToSection('contact')">
+                        <button class="btn btn-secondary" id="btn-contact">
                             <span>Get In Touch</span>
                             <i class="fas fa-envelope"></i>
                         </button>
                     </div>
                 </div>
             </div>
-            <div class="hero-background">
-                <div class="bg-shape shape-1" data-speed="0.5"></div>
-                <div class="bg-shape shape-2" data-speed="0.3"></div>
-                <div class="bg-shape shape-3" data-speed="0.7"></div>
-                <div class="bg-shape shape-4" data-speed="0.4"></div>
-                <div class="bg-shape shape-5" data-speed="0.6"></div>
-                <div class="particles" id="particles"></div>
+            <div class="floating-elements">
+                <div class="floating-icon" style="--delay: 0s">
+                    <i class="fab fa-python"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 1s">
+                    <i class="fas fa-brain"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 2s">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 3s">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 0.5s">
+                    <i class="fas fa-database"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 1.5s">
+                    <i class="fab fa-aws"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 2.5s">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 3.5s">
+                    <i class="fab fa-docker"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 0.8s">
+                    <i class="fas fa-network-wired"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 1.8s">
+                    <i class="fab fa-react"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 2.8s">
+                    <i class="fab fa-node-js"></i>
+                </div>
+                <div class="floating-icon" style="--delay: 3.8s">
+                    <i class="fas fa-server"></i>
+                </div>
             </div>
         </div>
     </section>
@@ -115,18 +154,18 @@
                     <div class="text-block">
                         <h3>My Journey</h3>
                         <p>
-                            I'm a passionate ML Engineer with 5+ years of experience in developing 
-                            machine learning solutions that drive business value. I specialize in 
-                            end-to-end ML pipeline development, from data preprocessing to model 
+                            I'm a passionate ML Engineer with 5+ years of experience in developing
+                            machine learning solutions that drive business value. I specialize in
+                            end-to-end ML pipeline development, from data preprocessing to model
                             deployment and monitoring.
                         </p>
                     </div>
                     <div class="text-block">
                         <h3>What I Do</h3>
                         <p>
-                            I design and implement scalable ML systems, work with large datasets, 
-                            and create models that solve complex business problems. My expertise 
-                            spans across computer vision, natural language processing, and 
+                            I design and implement scalable ML systems, work with large datasets,
+                            and create models that solve complex business problems. My expertise
+                            spans across computer vision, natural language processing, and
                             predictive analytics.
                         </p>
                     </div>
@@ -282,7 +321,8 @@
             <div class="projects-grid">
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" alt="Computer Vision">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop"
+                            alt="Computer Vision" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -292,7 +332,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Computer Vision Model</h3>
-                        <p>Advanced object detection system using YOLO and TensorFlow for real-time image analysis with 92% accuracy.</p>
+                        <p>Advanced object detection system using YOLO and TensorFlow for real-time image analysis with
+                            92% accuracy.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">TensorFlow</span>
@@ -303,7 +344,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="NLP Sentiment">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
+                            alt="NLP Sentiment" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -313,7 +355,8 @@
                     </div>
                     <div class="project-content">
                         <h3>NLP Sentiment Analysis</h3>
-                        <p>Real-time sentiment analysis API using BERT and Flask for social media monitoring with 89% accuracy.</p>
+                        <p>Real-time sentiment analysis API using BERT and Flask for social media monitoring with 89%
+                            accuracy.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">BERT</span>
@@ -324,7 +367,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Analytics Dashboard">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+                            alt="Analytics Dashboard" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -334,7 +378,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Predictive Analytics Dashboard</h3>
-                        <p>Interactive dashboard for sales forecasting using time series analysis and ML models with real-time updates.</p>
+                        <p>Interactive dashboard for sales forecasting using time series analysis and ML models with
+                            real-time updates.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Streamlit</span>
@@ -345,7 +390,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" alt="Deep Learning">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop"
+                            alt="Deep Learning" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -355,7 +401,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Deep Learning Image Classifier</h3>
-                        <p>Advanced CNN model for medical image classification with 95% accuracy using transfer learning and data augmentation.</p>
+                        <p>Advanced CNN model for medical image classification with 95% accuracy using transfer learning
+                            and data augmentation.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">TensorFlow</span>
@@ -366,7 +413,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Recommendation System">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
+                            alt="Recommendation System" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -376,7 +424,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Movie Recommendation System</h3>
-                        <p>Collaborative filtering recommendation engine using matrix factorization and deep learning for personalized suggestions.</p>
+                        <p>Collaborative filtering recommendation engine using matrix factorization and deep learning
+                            for personalized suggestions.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">PyTorch</span>
@@ -387,7 +436,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Stock Prediction">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+                            alt="Stock Prediction" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -397,7 +447,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Stock Price Prediction</h3>
-                        <p>LSTM-based time series model for stock price forecasting with technical indicators and sentiment analysis.</p>
+                        <p>LSTM-based time series model for stock price forecasting with technical indicators and
+                            sentiment analysis.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">TensorFlow</span>
@@ -408,7 +459,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="AI Chatbot">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
+                            alt="AI Chatbot" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -418,7 +470,8 @@
                     </div>
                     <div class="project-content">
                         <h3>AI Chatbot Assistant</h3>
-                        <p>Intelligent chatbot using transformer architecture for customer support with context awareness and multi-language support.</p>
+                        <p>Intelligent chatbot using transformer architecture for customer support with context
+                            awareness and multi-language support.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Transformers</span>
@@ -429,7 +482,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" alt="Data Pipeline">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop"
+                            alt="Data Pipeline" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -439,7 +493,8 @@
                     </div>
                     <div class="project-content">
                         <h3>ETL Data Pipeline</h3>
-                        <p>Automated data processing pipeline using Apache Airflow for real-time data ingestion, transformation, and loading.</p>
+                        <p>Automated data processing pipeline using Apache Airflow for real-time data ingestion,
+                            transformation, and loading.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Apache Airflow</span>
@@ -450,7 +505,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="MLOps">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+                            alt="MLOps" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -460,7 +516,8 @@
                     </div>
                     <div class="project-content">
                         <h3>MLOps Pipeline</h3>
-                        <p>End-to-end MLOps solution with model versioning, automated training, deployment, and monitoring using MLflow.</p>
+                        <p>End-to-end MLOps solution with model versioning, automated training, deployment, and
+                            monitoring using MLflow.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">MLflow</span>
@@ -471,7 +528,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Fraud Detection">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop"
+                            alt="Fraud Detection" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -481,7 +539,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Fraud Detection System</h3>
-                        <p>Machine learning model for detecting fraudulent transactions using ensemble methods and real-time processing.</p>
+                        <p>Machine learning model for detecting fraudulent transactions using ensemble methods and
+                            real-time processing.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">Scikit-learn</span>
@@ -492,7 +551,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop" alt="Neural Network">
+                        <img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=400&h=250&fit=crop"
+                            alt="Neural Network" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -502,7 +562,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Neural Network from Scratch</h3>
-                        <p>Built a complete neural network framework from scratch using only NumPy, implementing backpropagation and optimization.</p>
+                        <p>Built a complete neural network framework from scratch using only NumPy, implementing
+                            backpropagation and optimization.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">NumPy</span>
@@ -513,7 +574,8 @@
                 </div>
                 <div class="project-card">
                     <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop" alt="Data Visualization">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop"
+                            alt="Data Visualization" loading="lazy">
                         <div class="project-overlay">
                             <div class="project-links">
                                 <a href="#" class="project-link"><i class="fab fa-github"></i></a>
@@ -523,7 +585,8 @@
                     </div>
                     <div class="project-content">
                         <h3>Interactive Data Visualization</h3>
-                        <p>Advanced data visualization dashboard with D3.js and Python for exploring complex datasets with interactive charts.</p>
+                        <p>Advanced data visualization dashboard with D3.js and Python for exploring complex datasets
+                            with interactive charts.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">D3.js</span>
@@ -576,19 +639,24 @@
                 <div class="contact-form">
                     <form id="contact-form">
                         <div class="form-group">
+                            <label for="name" class="sr-only">Your Name</label>
                             <input type="text" id="name" name="name" placeholder="Your Name" required>
                             <span class="error-message" id="name-error"></span>
                         </div>
                         <div class="form-group">
+                            <label for="email" class="sr-only">Your Email</label>
                             <input type="email" id="email" name="email" placeholder="Your Email" required>
                             <span class="error-message" id="email-error"></span>
                         </div>
                         <div class="form-group">
+                            <label for="subject" class="sr-only">Subject</label>
                             <input type="text" id="subject" name="subject" placeholder="Subject" required>
                             <span class="error-message" id="subject-error"></span>
                         </div>
                         <div class="form-group">
-                            <textarea id="message" name="message" placeholder="Your Message" rows="5" required></textarea>
+                            <label for="message" class="sr-only">Your Message</label>
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
                             <span class="error-message" id="message-error"></span>
                         </div>
                         <button type="submit" class="btn btn-primary" id="submit-btn">
@@ -607,13 +675,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2024 Your Name. All rights reserved.</p>
+                    <p>&copy; 2024 Vishal Bagal. All rights reserved.</p>
                 </div>
                 <div class="social-links">
                     <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-github"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
                     <a href="#" class="social-link"><i class="fab fa-medium"></i></a>
+                    <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i></a>
                 </div>
             </div>
         </div>
@@ -621,4 +690,5 @@
 
     <script src="script.js"></script>
 </body>
+
 </html>
